@@ -37,8 +37,8 @@ public class ButtonColumnSetting : MultiChoiceColumnSetting<ButtonType?>
     }
 
     public override string Key { get; set; } = "ButtonTypes";
-    public override string Name { get; set; } = "Button Types";
-    public override string HelpText { get; set; } = "The buttons to display";
+    public override string Name { get; set; } = "按钮类型";
+    public override string HelpText { get; set; } = "要显示的按钮";
 
     public override List<ButtonType?> DefaultValue { get; set; } = new();
     public override List<ButtonType?> GetChoices(ColumnConfiguration configuration)
@@ -51,13 +51,13 @@ public class ButtonColumnSetting : MultiChoiceColumnSetting<ButtonType?>
         switch (choice)
         {
             case ButtonType.CraftLog:
-                return "Craft Log";
+                return "制作手册";
             case ButtonType.Buy:
-                return "Buy";
+                return "购买";
             case ButtonType.Gather:
-                return "Gather Log";
+                return "采集手册";
             case ButtonType.Action:
-                return "Action Button";
+                return "动作按钮";
         }
 
         return choice.ToString() ?? "";

@@ -16,7 +16,7 @@ namespace InventoryTools.Logic.Columns.ColumnSettings;
 public class SourceTypeSelectorSetting : MultiChoiceColumnSetting<(ItemInfoType,string)>
 {
     private readonly ItemInfoRenderService _itemInfoRenderService;
-    public override string EmptyText => "All";
+    public override string EmptyText => "全部";
 
     public SourceTypeSelectorSetting(ILogger<MarketboardWorldSetting> logger, ImGuiService imGuiService, ItemInfoRenderService itemInfoRenderService) : base(logger, imGuiService)
     {
@@ -47,8 +47,8 @@ public class SourceTypeSelectorSetting : MultiChoiceColumnSetting<(ItemInfoType,
 
 
     public override string Key { get; set; } = "SourceTypes";
-    public override string Name { get; set; } = "Types";
-    public override string HelpText { get; set; } = "Which source types should this display?";
+    public override string Name { get; set; } = "类型";
+    public override string HelpText { get; set; } = "应该显示哪些来源类型？";
     public override List<(ItemInfoType,string)>? DefaultValue { get; set; } = null;
     public override List<(ItemInfoType,string)> GetChoices(ColumnConfiguration configuration)
     {
