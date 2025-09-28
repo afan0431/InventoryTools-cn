@@ -1,10 +1,15 @@
 # Allagan Tools
-Dalamud plugin for inventory tracking, item searching, craft lists and item information(like garland tools).
+用于库存跟踪、物品搜索、制作清单和物品信息的Dalamud插件（类似Garland Tools）。
 
+本插件提供强大的FFXIV游戏内物品管理功能，包括：
+- 库存追踪和监控
+- 物品搜索和过滤
+- 制作清单管理
+- 详细的物品信息查看
 
-## Support
-Open an issue here or join the goatplace discord.
+## 支持
+如有问题请在此处提交issue或加入goatplace discord。
 
-## Contributing
+## 贡献代码
 
-Contributions are welcome, but please make an issue first before writing any code. It's possible what you want to implement is out of scope for this project, or could be reworked so that it would provide greater benefit.
+欢迎贡献代码，但请在编写任何代码之前先创建issue。您想要实现的功能可能超出了此项目的范围，或者可以重新设计以提供更大的收益。

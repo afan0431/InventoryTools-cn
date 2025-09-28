@@ -35,7 +35,7 @@ public class SubmarinesWindow : GenericTabbedTable<SubmarineExplorationRow>, IMe
     public override void Initialize()
     {
         Key = "submarines";
-        WindowName = "Submarines";
+        WindowName = "潜艇";
         _columns = new List<TableColumn<SubmarineExplorationRow>>()
         {
             new("Icon", 32, ImGuiTableColumnFlags.WidthFixed)

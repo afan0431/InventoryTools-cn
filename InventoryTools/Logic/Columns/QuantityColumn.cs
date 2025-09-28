@@ -117,13 +117,13 @@ namespace InventoryTools.Logic.Columns
             return base.Draw(configuration, columnConfiguration, searchResult, rowIndex, columnIndex);
         }
 
-        public override string Name { get; set; } = "Quantity/Total Quantity Available";
-        public override string RenderName => "Quantity";
+        public override string Name { get; set; } = "数量/总可用数量";
+        public override string RenderName => "数量";
 
         public override float Width { get; set; } = 70.0f;
 
         public override string HelpText { get; set; } =
-            "The quantity of the item. If viewing from a game items or craft filter, this will show the total number of items available in all inventories.";
+            "物品的数量。如果从游戏物品或制作过滤器查看，这将显示所有库存中可用物品的总数。";
         public override bool HasFilter { get; set; } = true;
         public override ColumnFilterType FilterType { get; set; } = ColumnFilterType.Text;
 

@@ -130,7 +130,7 @@ namespace InventoryTools.Ui
         }
         public override void Initialize()
         {
-            WindowName = "Crafts";
+            WindowName = "制作";
             Key = "crafts";
             _throttleDispatcher = new ThrottleDispatcher(5000, true);
             _splitter = new(_configuration.CraftWindowSplitterPosition, new(100, 100), true);

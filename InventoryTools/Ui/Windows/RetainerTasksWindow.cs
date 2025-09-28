@@ -29,7 +29,7 @@ public class RetainerTasksWindow : GenericTabbedTable<RetainerTaskRow>, IMenuWin
     }
     public override void Initialize()
     {
-        WindowName = "Retainer Ventures";
+        WindowName = "雇员探险";
         Key = "retainerTasks";
         _columns = new List<TableColumn<RetainerTaskRow>>()
         {

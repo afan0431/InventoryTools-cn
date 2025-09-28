@@ -29,7 +29,7 @@ namespace InventoryTools.Logic.Columns
             return null;
         }
 
-        public override string Name { get; set; } = "Buy from Vendor Price";
+        public override string Name { get; set; } = "商贩购买价格";
         public override float Width { get; set; } = 100.0f;
         public override string HelpText { get; set; } = "How much the item can be purchased from a vendor(gil)";
         public override bool HasFilter { get; set; } = true;

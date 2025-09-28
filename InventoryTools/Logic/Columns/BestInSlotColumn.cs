@@ -77,7 +77,7 @@ namespace InventoryTools.Logic.Columns
             return null;
         }
 
-        public override string Name { get; set; } = "Relative Item Level";
+        public override string Name { get; set; } = "相对物品等级";
         public override float Width { get; set; } = 150;
 
         public override string HelpText { get; set; } =

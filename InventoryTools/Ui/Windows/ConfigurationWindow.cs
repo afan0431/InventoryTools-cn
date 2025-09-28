@@ -88,17 +88,17 @@ namespace InventoryTools.Ui
 
         public override void Initialize()
         {
-            WindowName = "Configuration";
+            WindowName = "配置";
             Key = "configuration";
             _configPages = new List<IConfigPage>();
-            _configPages.Add(new SeparatorPageItem("Settings"));
+            _configPages.Add(new SeparatorPageItem("设置"));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.General));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Lists));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Highlighting));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Items));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Windows));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.AutoSave));
-            _configPages.Add(new SeparatorPageItem("Modules", true));
+            _configPages.Add(new SeparatorPageItem("模块", true));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.MarketBoard));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.ToolTips));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.ContextMenu));
@@ -110,7 +110,7 @@ namespace InventoryTools.Ui
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.History));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Misc));
             _configPages.Add(_settingPageFactory.Invoke(SettingCategory.Troubleshooting, null, true));
-            _configPages.Add(new SeparatorPageItem("Data", true));
+            _configPages.Add(new SeparatorPageItem("数据", true));
             _configPages.Add(_configPageFactory.Invoke(typeof(FiltersPage)));
             _configPages.Add(_configPageFactory.Invoke(typeof(CraftFiltersPage)));
             _configPages.Add(_configPageFactory.Invoke(typeof(ImportExportPage)));
@@ -119,10 +119,10 @@ namespace InventoryTools.Ui
             _addFilterMenu = new PopupMenu("addFilter", PopupMenu.PopupMenuButtons.LeftRight,
                 new List<PopupMenu.IPopupMenuItem>()
                 {
-                    new PopupMenu.PopupMenuItemSelectableAskName("Search List", "adf1", "New Search List", AddSearchFilter, "This will create a new list that let's you search for specific items within your characters and retainers inventories."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("Sort List", "af2", "New Sort Filter", AddSortFilter, "This will create a new list that let's you search for specific items within your characters and retainers inventories then determine where they should be moved to."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("Game Item List", "af3", "New Game Item List", AddGameItemFilter, "This will create a list that lets you search for all items in the game."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("History List", "af4", "New History Item List", AddHistoryFilter, "This will create a list that lets you view historical data of how your inventory has changed."),
+                    new PopupMenu.PopupMenuItemSelectableAskName("搜索列表", "adf1", "新搜索列表", AddSearchFilter, "这将创建一个新列表，让您在角色和雇员的库存中搜索特定物品。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("整理列表", "af2", "新整理过滤器", AddSortFilter, "这将创建一个新列表，让您在角色和雇员的库存中搜索特定物品，然后确定它们应该移动到哪里。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("游戏物品列表", "af3", "新游戏物品列表", AddGameItemFilter, "这将创建一个列表，让您搜索游戏中的所有物品。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("历史列表", "af4", "新历史物品列表", AddHistoryFilter, "这将创建一个列表，让您查看库存变化的历史数据。"),
                 });
 
             _addSampleMenu = new PopupMenu("addSampleFilter", PopupMenu.PopupMenuButtons.LeftRight, []);

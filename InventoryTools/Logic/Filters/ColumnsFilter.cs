@@ -69,7 +69,7 @@ namespace InventoryTools.Logic.Filters
         }
 
         public override string Key { get; set; } = "Columns";
-        public override string Name { get; set; } = "Columns";
+        public override string Name { get; set; } = "列";
         public override string HelpText { get; set; } = "Add a new column. Leave the column name blank if you want to use the default.";
         public override FilterCategory FilterCategory { get; set; } = FilterCategory.Columns;
         public override bool ShowReset { get; set; } = false;

@@ -36,27 +36,27 @@ namespace InventoryTools.Commands
 
         [Command("/allagantools")]
         [Aliases("/atools")]
-        [HelpMessage("Shows the allagan tools items list window.")]
+        [HelpMessage("显示艾拉甘工具箱物品列表窗口。")]
         public void ShowHideInventoryToolsCommand(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(FiltersWindow)));
         }
         [Command("/duties")]
         [Aliases("/atduties")]
-        [HelpMessage("Shows the allagan tools duties window.")]
+        [HelpMessage("显示艾拉甘工具箱副本窗口。")]
         public void ShowHideDutiesWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(DutiesWindow)));
         }
         [Command("/mobs")]
         [Aliases("/atmobs")]
-        [HelpMessage("Shows the allagan tools mobs window.")]
+        [HelpMessage("显示艾拉甘工具箱怪物窗口。")]
         public void ShowHideMobsWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(BNpcsWindow)));
         }
         [Command("/atnpcs")]
-        [HelpMessage("Shows the allagan tools npcs window.")]
+        [HelpMessage("显示艾拉甘工具箱NPC窗口。")]
         public void ShowHideNpcsWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(ENpcsWindow)));
@@ -65,14 +65,14 @@ namespace InventoryTools.Commands
 
         [Command("/athighlight")]
         [Aliases("/atf")]
-        [HelpMessage("Toggles the specified list's highlight on/off, turning off any other highlighting in the process.")]
+        [HelpMessage("切换指定列表的高亮显示开/关，同时关闭其他高亮显示。")]
         public  void FilterToggleCommand(string command, string args)
         {
             Logger.LogTrace(command);
             Logger.LogTrace(args);
             if (args.Trim() == "")
             {
-                _chatUtilities.PrintError("You must enter the name of an list.");
+                _chatUtilities.PrintError("您必须输入列表的名称。");
             }
             else
             {
@@ -81,12 +81,12 @@ namespace InventoryTools.Commands
         }
 
         [Command("/openlist")]
-        [HelpMessage("Open/closes a window displaying the contents of a single list.")]
+        [HelpMessage("打开/关闭显示单个列表内容的窗口。")]
         public  void OpenFilterCommand(string command, string args)
         {
             if (args.Trim() == "")
             {
-                _chatUtilities.PrintError("You must enter the name of a list.");
+                _chatUtilities.PrintError("您必须输入列表的名称。");
             }
             else
             {
@@ -97,62 +97,62 @@ namespace InventoryTools.Commands
                 }
                 else
                 {
-                    _chatUtilities.PrintError("Could not find a list with that name.");
+                    _chatUtilities.PrintError("找不到具有该名称的列表。");
                 }
             }
         }
 
         [Command("/crafts")]
-        [HelpMessage("Opens the allagan tools crafts window")]
+        [HelpMessage("打开艾拉甘工具箱制作窗口。")]
         public  void OpenCraftsWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(CraftsWindow)));
         }
 
         [Command("/airships")]
-        [HelpMessage("Opens the allagan tools airships window")]
+        [HelpMessage("打开艾拉甘工具箱飞艇窗口。")]
         public  void ToggleAirshipsWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(AirshipsWindow)));
         }
 
         [Command("/submarines")]
-        [HelpMessage("Opens the allagan tools submarines window")]
+        [HelpMessage("打开艾拉甘工具箱潜艇窗口。")]
         public  void ToggleSubmarinesWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(SubmarinesWindow)));
         }
 
         [Command("/retainerventures")]
-        [HelpMessage("Opens the allagan tools retainer ventures window")]
+        [HelpMessage("打开艾拉甘工具箱雇员探险窗口。")]
         public  void ToggleToggleRetainerTasksWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(RetainerTasksWindow)));
         }
 
         [Command("/atconfig")]
-        [HelpMessage("Opens the allagan tools configuration window")]
+        [HelpMessage("打开艾拉甘工具箱配置窗口。")]
         public  void OpenConfigurationWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(ConfigurationWindow)));
         }
 
         [Command("/athelp")]
-        [HelpMessage("Opens the allagan tools help window")]
+        [HelpMessage("打开艾拉甘工具箱帮助窗口。")]
         public void OpenHelpWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(HelpWindow)));
         }
 
         [Command("/atdebug")]
-        [HelpMessage("Opens the allagan tools debug window")]
+        [HelpMessage("打开艾拉甘工具箱调试窗口。")]
         public void ToggleDebugWindow(string command, string args)
         {
             _mediatorService.Publish(new ToggleDalamudWindowMessage(typeof(AllaganDebugWindow)));
         }
 
         [Command("/atclearhighlights", "/atclearfilter")]
-        [HelpMessage("Clears the currently active highlighting. Pass in background or ui to turn off highlighting for the background and ui highlighting respectively.")]
+        [HelpMessage("清除当前活动的高亮显示。传入 background 或 ui 分别关闭背景高亮和界面高亮。")]
         public void ClearFilter(string command, string args)
         {
             args = args.Trim();
@@ -172,14 +172,14 @@ namespace InventoryTools.Commands
         }
 
         [Command("/atcloselists", "/atclosefilters")]
-        [HelpMessage("Closes all list windows.")]
+        [HelpMessage("关闭所有列表窗口。")]
         public void CloseFilterWindows(string command, string args)
         {
             _mediatorService.Publish(new CloseWindowsByTypeMessage(typeof(FilterWindow)));
         }
 
         [Command("/atclearall")]
-        [HelpMessage("Closes all list windows and clears all active highlighting. Pass in background or ui to close just the background or ui highlighting respectively.")]
+        [HelpMessage("关闭所有列表窗口并清除所有活动高亮。传入 background 或 ui 分别只清除背景高亮或界面高亮。")]
         public void ClearAll(string command, string args)
         {
             ClearFilter(command, args);
@@ -187,14 +187,14 @@ namespace InventoryTools.Commands
         }
 
         [Command("/craftoverlay")]
-        [HelpMessage("Toggles the crafting overlay window.")]
+        [HelpMessage("切换制作覆盖窗口。")]
         public void CraftOverlay(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(CraftOverlayWindow)));
         }
 
         [Command("/atrecommend", "/atr")]
-        [HelpMessage("Toggles the equipment recommendation window.")]
+        [HelpMessage("切换装备推荐窗口。")]
         public void EquipmentRecommendation(string command, string args)
         {
             _mediatorService.Publish(new ToggleGenericWindowMessage(typeof(EquipmentSuggestWindow)));
@@ -202,7 +202,7 @@ namespace InventoryTools.Commands
 
         [Command("/moreinfo")]
         [Aliases("/itemwindow")]
-        [HelpMessage("Opens the more information window for a specific item. Provide the name of the item or the ID of the item.")]
+        [HelpMessage("打开特定物品的详细信息窗口。请提供物品名称或物品ID。")]
         public void MoreInformation(string command, string args)
         {
             args = args.Trim();
@@ -229,7 +229,7 @@ namespace InventoryTools.Commands
             }
             else
             {
-                _chatUtilities.PrintError("The item " + args + " could not be found.");
+                _chatUtilities.PrintError("找不到物品 " + args + "。");
             }
         }
 

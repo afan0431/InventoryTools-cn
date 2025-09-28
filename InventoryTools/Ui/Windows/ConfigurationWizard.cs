@@ -27,7 +27,7 @@ public class ConfigurationWizard : GenericWindow
     private int _currentFeature;
     public override void Initialize()
     {
-        WindowName = "Configuration Wizard";
+        WindowName = "配置向导";
         Key = "wizard";
         _availableFeatures = _configurationWizardService.GetNewFeatures();
     }

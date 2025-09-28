@@ -57,7 +57,7 @@ public class BNpcsWindow : GenericTabbedTable<BNpcNameRow>, IMenuWindow
     }
     public override void Initialize()
     {
-        WindowName = "Mobs";
+        WindowName = "怪物";
         Key = "mobs";
         var mobSpawns = _mobSpawnPositions;
         var availableTerritories = mobSpawns.Select(c => c.TerritoryTypeId).ToHashSet();

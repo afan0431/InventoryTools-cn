@@ -144,7 +144,7 @@ public class ItemPalaceOfTheDeadSourceRenderer : ItemSupplementSourceRenderer<It
     {
     }
 
-    public override string SingularName => "Palace of the Dead";
+    public override string SingularName => "死者宫殿";
     public override string HelpText => "Can the item be obtained from a loot item in the Palace of the Dead?";
 }
 
@@ -156,7 +156,7 @@ public class ItemPalaceOfTheDeadUseRenderer : ItemSupplementUseRenderer<ItemPala
     {
     }
 
-    public override string SingularName => "Palace of the Dead";
+    public override string SingularName => "死者宫殿";
     public override string HelpText => "Is this a loot item obtained in the Palace of the Dead?";
 }
 public class ItemHeavenOnHighSourceRenderer : ItemSupplementSourceRenderer<ItemHeavenOnHighSource>
@@ -167,7 +167,7 @@ public class ItemHeavenOnHighSourceRenderer : ItemSupplementSourceRenderer<ItemH
     {
     }
 
-    public override string SingularName => "Heaven on High";
+    public override string SingularName => "天之御柱";
     public override string HelpText => "Can the item be obtained from a loot item in the Heaven on High?";
 }
 
@@ -179,7 +179,7 @@ public class ItemHeavenOnHighUseRenderer : ItemSupplementUseRenderer<ItemHeavenO
     {
     }
 
-    public override string SingularName => "Heaven on High";
+    public override string SingularName => "天之御柱";
     public override string HelpText => "Is this a loot item obtained in the Heaven on High?";
 }
 public class ItemEurekaOrthosSourceRenderer : ItemSupplementSourceRenderer<ItemEurekaOrthosSource>
@@ -190,7 +190,7 @@ public class ItemEurekaOrthosSourceRenderer : ItemSupplementSourceRenderer<ItemE
     {
     }
 
-    public override string SingularName => "Eureka Orthos";
+    public override string SingularName => "优雷卡正统派";
     public override string HelpText => "Can the item be obtained from a loot item in the Eureka Orthos?";
 }
 
@@ -202,7 +202,7 @@ public class ItemEurekaOrthosUseRenderer : ItemSupplementUseRenderer<ItemEurekaO
     {
     }
 
-    public override string SingularName => "Eureka Orthos";
+    public override string SingularName => "优雷卡正统派";
     public override string HelpText => "Is this a loot item obtained in the Eureka Orthos?";
 }
 
@@ -214,7 +214,7 @@ public class ItemAnemosSourceRenderer : ItemSupplementSourceRenderer<ItemAnemosS
     {
     }
 
-    public override string SingularName => "Eureka Anemos";
+    public override string SingularName => "优雷卡常风之地";
     public override string HelpText => "Can the item be obtained from a loot item in Eureka Anemos?";
 }
 
@@ -224,7 +224,7 @@ public class ItemAnemosUseRenderer : ItemSupplementUseRenderer<ItemAnemosSource>
     {
     }
 
-    public override string SingularName => "Eureka Anemos";
+    public override string SingularName => "优雷卡常风之地";
     public override string HelpText => "Is this a loot item obtained in the Eureka Anemos?";
 }
 public class ItemPagosSourceRenderer : ItemSupplementSourceRenderer<ItemPagosSource>
@@ -235,7 +235,7 @@ public class ItemPagosSourceRenderer : ItemSupplementSourceRenderer<ItemPagosSou
     {
     }
 
-    public override string SingularName => "Eureka Pagos";
+    public override string SingularName => "优雷卡恥冰之地";
     public override string HelpText => "Can the item be obtained from a loot item in Eureka Pagos?";
 }
 
@@ -247,7 +247,7 @@ public class ItemPagosUseRenderer : ItemSupplementUseRenderer<ItemPagosSource>
     {
     }
 
-    public override string SingularName => "Eureka Pagos";
+    public override string SingularName => "优雷卡恥冰之地";
     public override string HelpText => "Is this a loot item obtained in the Eureka Pagos?";
 }
 public class ItemPyrosSourceRenderer : ItemSupplementSourceRenderer<ItemPyrosSource>
@@ -258,7 +258,7 @@ public class ItemPyrosSourceRenderer : ItemSupplementSourceRenderer<ItemPyrosSou
     {
     }
 
-    public override string SingularName => "Eureka Pyros";
+    public override string SingularName => "优雷卡涌火之地";
     public override string HelpText => "Can the item be obtained from a loot item in Eureka Pyros?";
 }
 
@@ -270,7 +270,7 @@ public class ItemPyrosUseRenderer : ItemSupplementUseRenderer<ItemPyrosSource>
     {
     }
 
-    public override string SingularName => "Eureka Pyros";
+    public override string SingularName => "优雷卡涌火之地";
     public override string HelpText => "Is this a loot item obtained in the Eureka Pyros?";
 }
 
@@ -282,7 +282,7 @@ public class ItemHydatosSourceRenderer : ItemSupplementSourceRenderer<ItemHydato
     {
     }
 
-    public override string SingularName => "Eureka Hydatos";
+    public override string SingularName => "优雷卡涴水之地";
     public override string HelpText => "Can the item be obtained from a loot item in Eureka Hydatos?";
 }
 
@@ -294,7 +294,7 @@ public class ItemHydatosUseRenderer : ItemSupplementUseRenderer<ItemHydatosSourc
     {
     }
 
-    public override string SingularName => "Eureka Hydatos";
+    public override string SingularName => "优雷卡涴水之地";
     public override string HelpText => "Is this a loot item obtained in the Eureka Hydatos?";
 }
 
@@ -304,7 +304,7 @@ public class ItemBozjaSourceRenderer : ItemSupplementSourceRenderer<ItemBozjaSou
     {
     }
 
-    public override string SingularName => "Bozja";
+    public override string SingularName => "博兹亚战场";
     public override string HelpText => "Can the item be obtained from a loot item in Bozja?";
 }
 
@@ -314,7 +314,7 @@ public class ItemBozjaUseRenderer : ItemSupplementUseRenderer<ItemBozjaSource>
     {
     }
 
-    public override string SingularName => "Bozja";
+    public override string SingularName => "博兹亚战场";
     public override string HelpText => "Is this a loot item obtained in the Bozja?";
 }
 public class ItemLogogramSourceRenderer : ItemSupplementSourceRenderer<ItemLogogramSource>
@@ -323,7 +323,7 @@ public class ItemLogogramSourceRenderer : ItemSupplementSourceRenderer<ItemLogog
     {
     }
 
-    public override string SingularName => "Logogram";
+    public override string SingularName => "成句文字";
     public override string HelpText => "Can the item be obtained from a logogram?";
 }
 
@@ -333,7 +333,7 @@ public class ItemLogogramUseRenderer : ItemSupplementUseRenderer<ItemLogogramSou
     {
     }
 
-    public override string SingularName => "Logogram";
+    public override string SingularName => "成句文字";
     public override string HelpText => "Is this item a logogram?";
 
     public override Func<ItemSource, int> GetIcon => source =>

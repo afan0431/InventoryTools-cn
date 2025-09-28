@@ -21,7 +21,7 @@ namespace InventoryTools.Ui
         }
         public override void Initialize()
         {
-            WindowName = "Help";
+            WindowName = "帮助";
             Key = "help";
         }
 

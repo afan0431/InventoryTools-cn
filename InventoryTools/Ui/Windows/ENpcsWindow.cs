@@ -45,7 +45,7 @@ public class ENpcsWindow : GenericTabbedTable<ENpcResidentRow>, IMenuWindow
 
     public override void Initialize()
     {
-        WindowName = "NPCs";
+        WindowName = "NPC";
         Key = "enpcs";
          _columns = new List<TableColumn<ENpcResidentRow>>()
         {

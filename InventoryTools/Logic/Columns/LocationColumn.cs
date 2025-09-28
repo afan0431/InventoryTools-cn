@@ -26,10 +26,10 @@ namespace InventoryTools.Logic.Columns
 
             return null;
         }
-        public override string Name { get; set; } = "Inventory Location";
-        public override string RenderName => "Location";
+        public override string Name { get; set; } = "库存位置";
+        public override string RenderName => "位置";
         public override float Width { get; set; } = 100.0f;
-        public override string HelpText { get; set; } = "Shows the location of the item in your inventory.";
+        public override string HelpText { get; set; } = "显示物品在您库存中的位置。";
         public override bool HasFilter { get; set; } = true;
         public override ColumnFilterType FilterType { get; set; } = ColumnFilterType.Text;
         public override FilterType DefaultIn => Logic.FilterType.SearchFilter | Logic.FilterType.SortingFilter | Logic.FilterType.CraftFilter | Logic.FilterType.HistoryFilter;

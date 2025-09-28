@@ -32,12 +32,12 @@ namespace InventoryTools.Logic.Settings
             var currentX = ImGui.GetCursorPosX();
             currentX += ImGui.GetFontSize() + ImGui.GetStyle().FramePadding.X * 3.0f + ImGui.GetStyle().ItemInnerSpacing.X;
             ImGui.SetCursorPosX(currentX);
-            ImGui.LabelText("##NextAutoSave","Next Autosave: " + (_pluginLogic.NextSaveTime?.ToString() ?? "N/A"));
+            ImGui.LabelText("##NextAutoSave","下次自动保存: " + (_pluginLogic.NextSaveTime?.ToString() ?? "无"));
         }
 
         public override string Key { get; set; } = "AutoSaveMinutes";
-        public override string Name { get; set; } = "Auto save every";
-        public override string HelpText { get; set; } = "How many minutes should there be between each auto save?";
+        public override string Name { get; set; } = "自动保存间隔";
+        public override string HelpText { get; set; } = "每次自动保存之间应该间隔多少分钟？";
         public override SettingCategory SettingCategory { get; set; } = SettingCategory.AutoSave;
         public override SettingSubCategory SettingSubCategory { get; } = SettingSubCategory.General;
         public override string Version => "1.7.0.0";

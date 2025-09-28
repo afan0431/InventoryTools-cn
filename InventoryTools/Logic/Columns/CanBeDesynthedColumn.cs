@@ -16,7 +16,7 @@ namespace InventoryTools.Logic.Columns
             return searchResult.Item.Base.Desynth != 0;
         }
 
-        public override string Name { get; set; } = "Is Desynthable?";
+        public override string Name { get; set; } = "可分解？";
         public override float Width { get; set; } = 100;
         public override string HelpText { get; set; } = "Can the item by desynthed?";
         public override bool HasFilter { get; set; } = true;

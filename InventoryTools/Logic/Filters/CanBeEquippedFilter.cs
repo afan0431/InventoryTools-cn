@@ -10,7 +10,7 @@ namespace InventoryTools.Logic.Filters
     public class CanBeEquippedFilter : BooleanFilter
     {
         public override string Key { get; set; } = "CanBeEquipped";
-        public override string Name { get; set; } = "Can be Equipped?";
+        public override string Name { get; set; } = "可装备？";
         public override string HelpText { get; set; } = "Can the item be equipped?";
 
         public override FilterCategory FilterCategory { get; set; } = FilterCategory.Basic;

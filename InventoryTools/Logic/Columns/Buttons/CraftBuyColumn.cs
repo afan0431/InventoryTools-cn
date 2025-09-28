@@ -32,7 +32,7 @@ public class CraftBuyColumn : ButtonColumn
         _chatUtilities = chatUtilities;
         _teleporterService = teleporterService;
     }
-    public override string Name { get; set; } = "Buy Button";
+    public override string Name { get; set; } = "购买按钮";
     public override float Width { get; set; } = 80;
     public override string HelpText { get; set; } = "A button/list to show you where you can buy an item";
     public override List<MessageBase>? Draw(FilterConfiguration configuration, ColumnConfiguration columnConfiguration,

@@ -105,42 +105,42 @@ namespace InventoryTools.Ui
         public override void Initialize()
         {
             Key = "filters";
-            WindowName = "Items";
+            WindowName = "物品";
             _settingsMenu = new PopupMenu("configMenu", PopupMenu.PopupMenuButtons.All,
                 new List<PopupMenu.IPopupMenuItem>()
                 {
-                    new PopupMenu.PopupMenuItemSelectable("Mob Window", "mobs", OpenMobsWindow,
-                        "Open the mobs window."),
-                    new PopupMenu.PopupMenuItemSelectable("Npcs Window", "npcs", OpenNpcsWindow,
-                        "Open the npcs window."),
-                    new PopupMenu.PopupMenuItemSelectable("Duties Window", "duties", OpenDutiesWindow,
-                        "Open the duties window."),
-                    new PopupMenu.PopupMenuItemSelectable("Airships Window", "airships", OpenAirshipsWindow,
-                        "Open the airships window."),
-                    new PopupMenu.PopupMenuItemSelectable("Submarines Window", "submarines", OpenSubmarinesWindow,
-                        "Open the submarines window."),
-                    new PopupMenu.PopupMenuItemSelectable("Retainer Ventures Window", "ventures",
-                        OpenRetainerVenturesWindow, "Open the retainer ventures window."),
+                    new PopupMenu.PopupMenuItemSelectable("怪物窗口", "mobs", OpenMobsWindow,
+                        "打开怪物窗口。"),
+                    new PopupMenu.PopupMenuItemSelectable("NPC窗口", "npcs", OpenNpcsWindow,
+                        "打开NPC窗口。"),
+                    new PopupMenu.PopupMenuItemSelectable("副本窗口", "duties", OpenDutiesWindow,
+                        "打开副本窗口。"),
+                    new PopupMenu.PopupMenuItemSelectable("飞艇窗口", "airships", OpenAirshipsWindow,
+                        "打开飞艇窗口。"),
+                    new PopupMenu.PopupMenuItemSelectable("潜艇窗口", "submarines", OpenSubmarinesWindow,
+                        "打开潜艇窗口。"),
+                    new PopupMenu.PopupMenuItemSelectable("雇员探险窗口", "ventures",
+                        OpenRetainerVenturesWindow, "打开雇员探险窗口。"),
                     new PopupMenu.PopupMenuItemSeparator(),
-                    new PopupMenu.PopupMenuItemSelectable("Help", "help", OpenHelpWindow, "Open the help window."),
+                    new PopupMenu.PopupMenuItemSelectable("帮助", "help", OpenHelpWindow, "打开帮助窗口。"),
                 });
 
             _tabLayout = Utils.GenerateRandomId();
             _addFilterMenu = new PopupMenu("addFilter", PopupMenu.PopupMenuButtons.LeftRight,
                 new List<PopupMenu.IPopupMenuItem>()
                 {
-                    new PopupMenu.PopupMenuItemSelectableAskName("Search List", "adf1", "New Search List",
+                    new PopupMenu.PopupMenuItemSelectableAskName("搜索列表", "adf1", "新搜索列表",
                         AddSearchFilter,
-                        "This will create a new list that let's you search for specific items within your characters and retainers inventories."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("Sort List", "af2", "New Sort List", AddSortFilter,
-                        "This will create a new list that let's you search for specific items within your characters and retainers inventories then determine where they should be moved to."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("Game Item List", "af3", "New Game Item List",
-                        AddGameItemFilter, "This will create a list that lets you search for all items in the game."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("History List", "af4", "New History List",
+                        "这将创建一个新列表，让您在角色和雇员的库存中搜索特定物品。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("整理列表", "af2", "新整理列表", AddSortFilter,
+                        "这将创建一个新列表，让您在角色和雇员的库存中搜索特定物品，然后确定它们应该移动到哪里。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("游戏物品列表", "af3", "新游戏物品列表",
+                        AddGameItemFilter, "这将创建一个列表，让您搜索游戏中的所有物品。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("历史列表", "af4", "新历史列表",
                         AddHistoryFilter,
-                        "This will create a list that lets you view historical data of how your inventory has changed."),
-                    new PopupMenu.PopupMenuItemSelectableAskName("Curated List", "af5", "New Curated List",
-                        AddCuratedFilter, "This will create a list that lets you add individual items to it manually."),
+                        "这将创建一个列表，让您查看库存变化的历史数据。"),
+                    new PopupMenu.PopupMenuItemSelectableAskName("精选列表", "af5", "新精选列表",
+                        AddCuratedFilter, "这将创建一个列表，让您手动添加单个物品。"),
                 });
             _menuWindows = _context.Resolve<IEnumerable<IMenuWindow>>().OrderBy(c => c.GenericName).Where(c => c.GetType() != this.GetType());
             MediatorService.Subscribe<ListInvalidatedMessage>(this, _ => Invalidate());

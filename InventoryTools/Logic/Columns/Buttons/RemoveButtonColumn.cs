@@ -49,7 +49,7 @@ public class RemoveButtonColumn : ButtonColumn
     }
 
     public override string? RenderName { get; } = "";
-    public override string Name { get; set; } = "Remove";
+    public override string Name { get; set; } = "移除";
     public override float Width { get; set; } = 60;
     public override string HelpText { get; set; } = "Adds a button for quickly removing items from your list";
 }

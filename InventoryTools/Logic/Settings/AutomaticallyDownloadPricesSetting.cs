@@ -26,7 +26,7 @@ namespace InventoryTools.Logic.Settings
         }
 
         public override string Key { get; set; } = "AutomaticallyDownloadPrices";
-        public override string Name { get; set; } = "Automatically download prices?";
+        public override string Name { get; set; } = "自动下载价格？";
 
         public override string WizardName { get; } = "Download Pricing Data";
         public override string HelpText { get; set; } = "Should price data be automatically downloaded when it's viewed in a list?";

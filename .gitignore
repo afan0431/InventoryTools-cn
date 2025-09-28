@@ -4,3 +4,7 @@ packages
 InventoryToolsCLI/*
 InventoryTools.sln.DotSettings.user
 exd-data
+
+# Claude Code 相关文件
+.claude
+CLAUDE.md
